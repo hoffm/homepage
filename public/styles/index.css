@@ -1,0 +1,34 @@
+:root {
+  --sonic-silver: #7c7a7aff;
+  --white: #ffffffff;
+  --persian-green: #17a398ff;
+  --russian-violet: #2f004fff;
+  --shocking-pink: #ed33b9ff;
+}
+
+body {
+  font-family: 'Arvo', serif;
+  background-color: var(--russian-violet);
+
+}
+h1, p {
+  color: var(--white);
+  margin-bottom: 0;
+}
+hr {
+  width: 48vw;
+  margin: 1vw 0px;
+  height: 2px;
+  /*border-width: 0;*/
+  color: var(--white);
+  background-color: var(--white);
+
+}
+a {
+  color: var(--persian-green);
+}
+#container {
+  font-size: 2vw;
+  margin: 30px 7%;
+  transform: skewY(-6deg);
+}
