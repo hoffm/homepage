@@ -18,8 +18,8 @@ h1, p {
 hr {
   width: 48vw;
   margin: 1vw 0px;
-  height: 2px;
-  /*border-width: 0;*/
+  height: 3px;
+  border-width: 0;
   color: var(--white);
   background-color: var(--white);
 
