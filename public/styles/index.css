@@ -9,10 +9,9 @@
 body {
   font-family: 'Arvo', serif;
   background-color: var(--russian-violet);
-
 }
 
-h1, p {
+h1, h2, p {
   color: var(--white);
   margin-bottom: 0;
 }
@@ -48,6 +47,11 @@ a {
   margin-top: 1em;
 }
 
+.podcast-image{
+  margin-top: 1em;
+  max-height: 150px;
+}
+
 @media screen and (max-width: 800px) {
   #container {
     font-size: 3vw;
@@ -63,7 +67,4 @@ a {
     font-size: 5vw;
   }
 
-  /*.title-underline {*/
-  /*  width: 72vw;*/
-  /*}*/
 }
