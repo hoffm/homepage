@@ -1,0 +1,61 @@
+body {
+  background-color: #D8DCFF;
+}
+
+h1, h2, p, text {
+  color: var(--russian-violet);
+  fill: var(--russian-violet);
+}
+
+#curve {
+  fill: transparent;
+}
+
+#skyline {
+  fill: #F7EBFF;
+  margin: -5vw -5vw 0;
+}
+
+
+a {
+  color: var(--persian-green);
+}
+
+#header {
+  font-size: 1.5vw;
+  margin: -40vw 0 0;
+}
+
+#container {
+  margin-top: -5vw;
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  #header {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #header {
+    font-size: 1.9vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #header {
+    font-size: 2.5vw;
+  }
+
+  #container {
+    font-size: 2.5vw;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  #header {
+    font-size: 4vw;
+  }
+}
