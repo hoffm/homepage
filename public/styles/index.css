@@ -9,6 +9,8 @@
 body {
   font-family: 'Arvo', serif;
   background-color: var(--russian-violet);
+  margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, p {
