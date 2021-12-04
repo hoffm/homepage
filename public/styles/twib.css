@@ -27,7 +27,7 @@ a {
 }
 
 #container {
-  margin-top: -5vw;
+  margin-top: -9vw;
   text-align: center;
 }
 
@@ -50,13 +50,12 @@ a {
 
   #container {
     font-size: 2.5vw;
-    margin-top: -2vw;
   }
 }
-
 
 @media screen and (max-width: 400px) {
   #header {
     font-size: 4vw;
   }
 }
+
