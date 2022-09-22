@@ -1,11 +1,11 @@
 <div id="container">
 
-  <div id="headline">
+  <div id="headline" class="tilt">
     <h1>Michael Hoffman</h1>
     <hr class="title-underline">
   </div>
 
-  <div id="intro">
+  <div class="body" id="intro">
     <p>I'm a software engineer.</p>
     <p>Come say a casual
       <a href='https://twitter.com/hoffm'>hi</a>,<br>
@@ -15,7 +15,25 @@
       <a href='https://github.com/hoffm'>hello world</a>.</p>
   </div>
 
-  <div id="projects">
 
+
+  <div id="projects" >
+    <h2 class="tilt">Projects</h2>
+    <div class="body">
+      <dl class="plain">
+        <% @projects.each do |project| %>
+          <dt>
+            <a href="<%= project[:link]%>" class="project-link">
+              <%= project[:title]%>
+            </a>
+          </dt>
+          <dd>
+            <%= project[:description]%>
+            (<% if project[:story]%><a href="<%= project[:story]%>">story</a>,&nbsp;
+            <% end %><a href="<%= project[:code]%>">code</a>)
+          </dd>
+        <% end %>
+      </dl>
+    </div>
   </div>
 </div>
