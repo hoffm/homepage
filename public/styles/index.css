@@ -22,11 +22,20 @@ p {
   margin-top: 0.5em;
 }
 
-a.project-link{
+dt {
+  margin-bottom: 0.2em;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+.project-name{
   background-color: var(--white);
   color: var(--russian-violet);
-
+  padding: 0 0.5em;
   text-decoration: none;
+  width: 15em;
 }
 
 hr {
@@ -40,11 +49,6 @@ hr {
 
 a {
   color: var(--persian-green);
-}
-
-ul {
-
-
 }
 
 ul.plain {
@@ -63,12 +67,28 @@ ul.plain {
 }
 
 .body {
-  margin-top: 3em;
+  margin-top: 1em;
   margin-left: 1em;
 }
 
 #projects {
-  margin-top: 2em;
+  margin-top: 3em;
+}
+
+.link-icon{
+  fill: var(--white);
+  height: 100%;
+  stroke: var(--white);
+  stroke-width: 0.5;
+  width: 100%;
+}
+
+.link-icon-container{
+  display: inline-block;
+  height: 2.5vw;
+  margin-left: 0.5em;
+  vertical-align: text-bottom;
+  width: 2.5vw;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,10 +99,21 @@ ul.plain {
   .title-underline {
     width: 72vw;
   }
+
+  .link-icon-container{
+    height: 4vw;
+    width: 4vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
   #container {
     font-size: 5vw;
+  }
+
+
+  .link-icon-container{
+    height: 6vw;
+    width: 6vw;
   }
 }

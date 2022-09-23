@@ -1,9 +1,6 @@
 <div id="container">
 
-  <div id="headline" class="tilt">
-    <h1>Michael Hoffman</h1>
-    <hr class="title-underline">
-  </div>
+  <%= erb :header %>>
 
   <div class="body" id="intro">
     <p>I'm a software engineer.</p>
@@ -13,27 +10,5 @@
       <a href='https://linkedin.com/in/hoffm'>hello</a>,<br>
       &nbsp; &nbsp; or maybe a
       <a href='https://github.com/hoffm'>hello world</a>.</p>
-  </div>
-
-
-
-  <div id="projects" >
-    <h2 class="tilt">Projects</h2>
-    <div class="body">
-      <dl class="plain">
-        <% @projects.each do |project| %>
-          <dt>
-            <a href="<%= project[:link]%>" class="project-link">
-              <%= project[:title]%>
-            </a>
-          </dt>
-          <dd>
-            <%= project[:description]%>
-            (<% if project[:story]%><a href="<%= project[:story]%>">story</a>,&nbsp;
-            <% end %><a href="<%= project[:code]%>">code</a>)
-          </dd>
-        <% end %>
-      </dl>
-    </div>
   </div>
 </div>

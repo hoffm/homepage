@@ -1,0 +1,29 @@
+<div id="container">
+  <%= erb :header %>
+
+  <div id="projects" >
+    <h2>Projects</h2>
+    <div class="body">
+      <dl class="plain">
+        <% @projects.each do |project| %>
+          <dt >
+            <span class="project-name">
+              <%= project[:title] %>
+            </span>
+
+            <a target="_blank" href="<%= project[:link]%>">
+              <div class="link-icon-container">
+                <%= erb :link_icon %>
+              </div>
+            </a>
+          </dt>
+          <dd>
+            <%= project[:description]%>
+            (<% if project[:story]%><a target="_blank" href="<%= project[:story]%>">story</a>,&nbsp;
+            <% end %><a target="_blank" href="<%= project[:code]%>">code</a>)
+          </dd>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</div>
