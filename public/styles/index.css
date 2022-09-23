@@ -51,10 +51,9 @@ a {
   color: var(--persian-green);
 }
 
-ul.plain {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+h1 > a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 #container {
