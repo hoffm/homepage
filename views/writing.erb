@@ -1,0 +1,24 @@
+<div id="container">
+  <%= erb :header %>
+
+  <div id="posts" class="link-list" >
+    <h2>Writing</h2>
+    <div class="body">
+      <dl class="plain">
+        <% @posts.each do |post| %>
+          <dt >
+            <a target="_blank" href="<%= post[:link]%>">
+              <%= post[:title] %>
+            </a>
+          </dt>
+          <dd>
+            <span class="negative-color date">
+              <%= post[:date] %>
+            </span>
+            <%= post[:description]%>
+          </dd>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</div>

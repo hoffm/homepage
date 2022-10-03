@@ -47,6 +47,44 @@ get '/projects' do
   erb :projects
 end
 
+get '/writing' do
+  @title = 'Michael Hoffman | Writing'
+  @posts = [
+    {
+      title: 'Hey, Look at Us',
+      link: 'https://hoffm.medium.com/hey-look-at-us-3a742993f5c',
+      description: 'The story behind a site that reports its own analytics—and another that only one person can be on at a time.',
+      date: "Jan '22"
+    },
+    {
+      title: 'Could a Podcast Make Itself?',
+      link: 'https://hoffm.medium.com/the-weather-in-brooklyn-ddc18439caa',
+      description: 'Why and how I built the first fully automated podcast.',
+      date: "Dec '21"
+    },
+    {
+      title: 'All of the Good Dogs in New York',
+      link: 'https://hoffm.medium.com/all-of-the-good-dogs-in-new-york-15ccc356eaf',
+      description: 'How a FOIA\'d dataset became a Twitter bot about the dogs of NYC.',
+      date: "Jan '18"
+    },
+    {
+      title: 'A Puzzle About Ruby Constants',
+      link: 'https://hoffm.medium.com/a-puzzle-about-ruby-constants-e958d15dbada',
+      description: 'A deep dive into Ruby’s algorithm for finding the definition of a constant.',
+      date: "Sep '17"
+    },
+    {
+      title: "I Can Think of Another Word for Food Dudes",
+      link: 'https://food52.com/blog/10344-i-can-think-of-another-word-for-food-dudes',
+      description: 'Grub Street wrote about how a certain kind of man behaves in the kitchen. I had thoughts.',
+      date: "May '16"
+    }
+  ]
+
+  erb :writing
+end
+
 get '/the-weather-in-brooklyn' do
   @title = 'The Weather in Brooklyn'
   erb :twib

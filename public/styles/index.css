@@ -1,14 +1,14 @@
 :root {
   --sonic-silver: #7c7a7aff;
   --white: #ffffffff;
-  --persian-green: #17a398ff;
-  --russian-violet: #2f004fff;
+  --green: #17a398ff;
+  --violet: #2f004fff;
   --shocking-pink: #ed33b9ff;
 }
 
 body {
   font-family: 'Arvo', serif;
-  background-color: var(--russian-violet);
+  background-color: var(--violet);
   margin: 0;
   overflow-x: hidden;
 }
@@ -16,6 +16,10 @@ body {
 h1, h2, p, dl {
   color: var(--white);
   margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 1em;
 }
 
 p {
@@ -30,13 +34,18 @@ dd {
   margin-bottom: 1em;
 }
 
-.project-name{
+.negative-color{
   background-color: var(--white);
-  color: var(--russian-violet);
+  color: var(--violet);
   padding: 0 0.5em;
   text-decoration: none;
   width: 15em;
 }
+
+.date{
+  margin-right: 0.5em;
+}
+
 
 hr {
   width: 48vw;
@@ -48,7 +57,7 @@ hr {
 }
 
 a {
-  color: var(--persian-green);
+  color: var(--green);
 }
 
 h1 > a {
@@ -69,8 +78,8 @@ h1 > a {
   margin-top: 1em;
 }
 
-#projects {
-  margin-top: 4em;
+.link-list {
+  margin-top: 3em;
 }
 
 .link-icon{

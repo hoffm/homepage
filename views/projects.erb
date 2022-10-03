@@ -1,13 +1,13 @@
 <div id="container">
   <%= erb :header %>
 
-  <div id="projects" >
+  <div id="projects" class="link-list"  >
     <h2>Projects</h2>
     <div class="body">
       <dl class="plain">
         <% @projects.each do |project| %>
           <dt >
-            <span class="project-name">
+            <span class="negative-color">
               <%= project[:title] %>
             </span>
 
