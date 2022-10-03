@@ -3,8 +3,8 @@ body {
 }
 
 h1, h2, p, text {
-  color: var(--russian-violet);
-  fill: var(--russian-violet);
+  color: var(--violet);
+  fill: var(--violet);
 }
 
 #curve {
@@ -18,7 +18,7 @@ h1, h2, p, text {
 
 
 a {
-  color: var(--persian-green);
+  color: var(--green);
 }
 
 #header {
