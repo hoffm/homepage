@@ -51,6 +51,12 @@ get '/writing' do
   @title = 'Michael Hoffman | Writing'
   @posts = [
     {
+      title: 'Six Coding Interview Formats to Replace LeetCode Bullshit',
+      link: 'https://hoffm.medium.com/six-coding-interview-formats-to-replace-leetcode-84f3c770b5c1',
+      description: 'LeetCode-style algorithms coding interviews evaluate engineers for the wrong skills. There\'s a better way. Here are six interview formats to use instead.',
+      date: "Nov '22"
+    },
+    {
       title: 'Hey, Look at Us',
       link: 'https://hoffm.medium.com/hey-look-at-us-3a742993f5c',
       description: 'The story behind a site that reports its own analytics—and another that only one person can be on at a time.',
